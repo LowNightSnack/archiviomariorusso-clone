@@ -18,3 +18,60 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.fadeIn {
+  opacity: 0;
+  transform: translateY(30px) rotateX(-80deg);
+  animation: fadeIn 500ms ease-in forwards;
+}
+
+.scaleIn {
+  opacity: 0;
+  transform: scale(1.2);
+  animation: scaleIn 1000ms ease-in-out forwards;
+}
+
+.slideOut {
+  animation: slideOut 1000ms ease-in-out forwards;
+}
+
+.delay2000 {
+  animation-delay: 2000ms;
+}
+
+.delay4000 {
+  animation-delay: 4000ms;
+}
+
+.delay6000 {
+  animation-delay: 6000ms;
+}
+
+.delay7000 {
+  animation-delay: 7000ms;
+}
+
+.delay10000 {
+  animation-delay: 10000ms;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideOut {
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}

@@ -1,4 +1,4 @@
-export const Hero = () => (
+export const Hero = ({ paymentFunction }) => (
   <div className="relative h-[963px]">
     <div className="absolute z-10 w-full h-full flex flex-col">
       <div className="flex-1 flex justify-between">
@@ -10,15 +10,12 @@ export const Hero = () => (
             </g>
           </svg>
         </button>
-        <button className="self-center ">Archivio Mario Russo</button>
+        <button onClick={paymentFunction} className="self-center ">
+          Archivio Mario Russo
+        </button>
         <button className="w-8 h-8 p-3 mr-6 self-center flex items-center">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.985 9.992">
-            <g
-              fill="none"
-              stroke="#fff"
-              stroke-linecap="round"
-              stroke-width="1"
-            >
+            <g fill="none" stroke="#fff" strokeLinecap="round" strokeWidth="1">
               <path data-name="Line 2" d="M.704 9.288l3.577-4.292" />
               <path data-name="Line 3" d="M.704.704l3.577 4.292" />
             </g>
@@ -41,8 +38,8 @@ export const Hero = () => (
               transform="translate(816 555.114)"
               fill="none"
               stroke="#fff"
-              stroke-linecap="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeWidth="2"
             />
             <line
               id="Line_3"
@@ -52,8 +49,8 @@ export const Hero = () => (
               transform="translate(822 555.114)"
               fill="none"
               stroke="#fff"
-              stroke-linecap="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeWidth="2"
             />
           </g>
         </svg>
