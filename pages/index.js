@@ -16,7 +16,7 @@ export default function Home() {
       <Introduction />
       <div className="h-56" />
       <Carousel />
-      <div className="uppercase text-center">Esplora l'archivio</div>
+      <div className="uppercase text-center">Esplora l&apos;archivio</div>
       <Biography />
       <Cosmocorpi />
       <div className="h-56" />
