@@ -54,7 +54,7 @@ export default function Home() {
       }, 500);
     }, 12000);
 
-    recursiveTimeout(120);
+    recursiveTimeout(90);
   }, []);
 
   const pay = async () => {
